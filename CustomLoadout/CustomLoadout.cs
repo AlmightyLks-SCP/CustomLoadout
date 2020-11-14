@@ -4,7 +4,7 @@ namespace CustomLoadout
 {
     [PluginInformation(
         Author = "AlmightyLks",
-        Description = "Configure role's inventories",
+        Description = "Configure roles' inventories",
         Name = "CustomLoadout",
         SynapseMajor = 2,
         SynapseMinor = 0,
