@@ -37,10 +37,6 @@ namespace CustomLoadout
                         }
                     }
                 }
-                else
-                {
-                    SynapseController.Server.Logger.Info("No");
-                }
             });
 
         }
