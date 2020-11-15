@@ -5,6 +5,8 @@ A simple SCP SL [Synapse](https://github.com/SynapseSL/Synapse/) Plugin for cust
 ---
 ### Configs
 
+For base-game role and item ids, checkout [DefaultRoleIDs](DefaultRoleIDs.md) & [DefaultItemIDs](DefaultItemIDs.md)
+
 Default config:
 
 ```yaml
