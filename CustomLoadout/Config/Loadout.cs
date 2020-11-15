@@ -6,7 +6,6 @@ namespace CustomLoadout
 {
     public class Loadout
     {
-        [Description("Affected role")]
         public int RoleID { get; set; }
 
         [Description("Replace the role's default inventory")]

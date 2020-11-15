@@ -23,25 +23,10 @@ namespace CustomLoadout
                         ev.Player.Inventory.Clear();
 
                     foreach (var item in loadout.Items)
-                    {
-                        if (UnityEngine.Random.Range(0, 100) <= item.Chance)
-                        {
-                            if ((item.Item.XSize == 0 && item.Item.YSize == 0 && item.Item.ZSize == 0) && (item.Item.ID >= -1 && item.Item.ID <= 35))
-                            {
-                                ev.Player.Inventory.AddItem(new SynapseItem((ItemType)item.Item.ID, 100, 0, 0, 0));
-                            }
-                            else
-                            {
-                                ev.Player.Inventory.AddItem(item.Item.Parse());
-                            }
-                        }
-                    }
+                        ev.Player.Inventory.AddItem(item.Item.Parse());
+
                 }
             });
-
         }
     }
 }
-/*
- * Item Size default 0
- */
