@@ -23,8 +23,10 @@ namespace CustomLoadout
                         ev.Player.Inventory.Clear();
 
                     foreach (var item in loadout.Items)
-                        ev.Player.Inventory.AddItem(item.Item.Parse());
-
+                    {
+                        if (UnityEngine.Random.Range(0f, 100f) <= item.Chance)
+                            ev.Player.Inventory.AddItem(item.Item.Parse());
+                    }
                 }
             });
         }
