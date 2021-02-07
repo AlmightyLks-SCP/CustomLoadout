@@ -1,8 +1,8 @@
 ﻿using Synapse.Config;
 
-namespace CustomLoadout.Config
+namespace CustomLoadout.Config.Types
 {
-    public class ItemChance
+    public sealed class ItemChance
     {
         public SerializedItem Item { get; set; }
         public float Chance { get; set; }

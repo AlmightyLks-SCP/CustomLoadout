@@ -19,6 +19,10 @@ namespace CustomLoadout
                     if (loadout is null)
                         return;
 
+                    uint ammo5 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo5 : ev.Player.Ammo5;
+                    uint ammo7 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo7 : ev.Player.Ammo7;
+                    uint ammo9 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo9 : ev.Player.Ammo9;
+
                     if (loadout.ReplaceDefault)
                         ev.Player.Inventory.Clear();
 
@@ -26,6 +30,10 @@ namespace CustomLoadout
                     {
                         if (UnityEngine.Random.Range(0f, 100f) <= item.Chance)
                             ev.Player.Inventory.AddItem(item.Item.Parse());
+
+                        ev.Player.Ammo5 = ammo5;
+                        ev.Player.Ammo7 = ammo7;
+                        ev.Player.Ammo9 = ammo9;
                     }
                 }
             });

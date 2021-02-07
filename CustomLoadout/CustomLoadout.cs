@@ -6,6 +6,7 @@ namespace CustomLoadout
         Author = "AlmightyLks",
         Description = "Configure roles' inventories",
         Name = "CustomLoadout",
+        LoadPriority = int.MinValue,
         SynapseMajor = 2,
         SynapseMinor = 1,
         SynapsePatch = 0,

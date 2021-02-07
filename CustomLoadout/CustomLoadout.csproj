@@ -72,9 +72,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\ItemChance.cs" />
+    <Compile Include="Config\Types\AmmoConfig.cs" />
+    <Compile Include="Config\Types\ItemChance.cs" />
     <Compile Include="CustomLoadout.cs" />
-    <Compile Include="Config\Loadout.cs" />
+    <Compile Include="Config\Types\Loadout.cs" />
     <Compile Include="Config\PluginConfig.cs" />
     <Compile Include="Handler\PluginEventHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
