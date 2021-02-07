@@ -10,7 +10,7 @@ namespace CustomLoadout
         SynapseMajor = 2,
         SynapseMinor = 1,
         SynapsePatch = 0,
-        Version = "1.1.0"
+        Version = "1.1.2"
         )]
     public class CustomLoadout : AbstractPlugin
     {
