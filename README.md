@@ -31,6 +31,13 @@ roleInventory:
       ySize: 1
       zSize: 1
     chance: 100
+  # Configure the class' ammunition
+  ammoConfig:
+  # Should the class' amount of ammo be replaced?
+    replaceAmmo: false
+    ammo5: 0
+    ammo7: 0
+    ammo9: 0
 }
 ```
 
