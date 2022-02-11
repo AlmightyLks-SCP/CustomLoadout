@@ -11,9 +11,9 @@ namespace CustomLoadout.Config.Types
     {
         [Description("Should the class' amount of ammo be replaced?")]
         public bool ReplaceAmmo { get; set; }
-        public uint Ammo5 { get; set; }
-        public uint Ammo7 { get; set; }
-        public uint Ammo9 { get; set; }
+        public ushort Ammo5 { get; set; }
+        public ushort Ammo7 { get; set; }
+        public ushort Ammo9 { get; set; }
 
         public AmmoConfig()
         {

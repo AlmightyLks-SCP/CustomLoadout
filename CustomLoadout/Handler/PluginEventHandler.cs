@@ -2,6 +2,7 @@
 using Synapse.Api.Events.SynapseEventArguments;
 using Synapse.Api.Items;
 using System.Linq;
+using Synapse.Api.Enum;
 
 namespace CustomLoadout
 {
@@ -19,9 +20,9 @@ namespace CustomLoadout
                     if (loadout is null)
                         return;
 
-                    uint ammo5 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo5 : ev.Player.Ammo5;
-                    uint ammo7 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo7 : ev.Player.Ammo7;
-                    uint ammo9 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo9 : ev.Player.Ammo9;
+                    ushort ammo5 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo5 : ev.Player.AmmoBox[AmmoType.Ammo556x45];
+                    ushort ammo7 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo7 : ev.Player.AmmoBox[AmmoType.Ammo762x39];
+                    ushort ammo9 = loadout.AmmoConfig.ReplaceAmmo ? loadout.AmmoConfig.Ammo9 : ev.Player.AmmoBox[AmmoType.Ammo9x19];
 
                     if (loadout.ReplaceDefault)
                         ev.Player.Inventory.Clear();
@@ -31,9 +32,9 @@ namespace CustomLoadout
                         if (UnityEngine.Random.Range(0f, 100f) <= item.Chance)
                             ev.Player.Inventory.AddItem(item.Item.Parse());
 
-                        ev.Player.Ammo5 = ammo5;
-                        ev.Player.Ammo7 = ammo7;
-                        ev.Player.Ammo9 = ammo9;
+                        ev.Player.AmmoBox[AmmoType.Ammo556x45] = ammo5;
+                        ev.Player.AmmoBox[AmmoType.Ammo762x39] = ammo7;
+                        ev.Player.AmmoBox[AmmoType.Ammo9x19] = ammo9;
                     }
                 }
             });

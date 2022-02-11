@@ -8,9 +8,9 @@ namespace CustomLoadout
         Name = "CustomLoadout",
         LoadPriority = int.MinValue,
         SynapseMajor = 2,
-        SynapseMinor = 1,
-        SynapsePatch = 0,
-        Version = "1.1.2"
+        SynapseMinor = 8,
+        SynapsePatch = 1,
+        Version = "1.2.0"
         )]
     public class CustomLoadout : AbstractPlugin
     {
