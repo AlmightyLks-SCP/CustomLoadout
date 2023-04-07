@@ -1,3 +1,9 @@
+# OUTDATED
+This Plugin was intended for Synapse 2, and is not made, nor compatible with Synapse3.
+
+---
+
+
 # CustomLoadout
 
 A simple SCP SL [Synapse](https://github.com/SynapseSL/Synapse/) Plugin for custom loadouts  
